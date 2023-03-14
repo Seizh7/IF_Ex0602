@@ -16,7 +16,7 @@ def read_json(filename):
     return file_data
 
 if __name__ == '__main__':
-    st.title("Exercice 4.1")
+    st.title("Exercice 6.2")
 
     json_data = read_json("fr-esr-principaux-etablissements-enseignement-superieur.json")
     
@@ -31,7 +31,7 @@ if __name__ == '__main__':
             lon.append(item['coordonnees']['lon'])
 
     map_data = pd.DataFrame({'ecoles' : noms, 'lat' : lat, 'lon' : lon})
-        
+
 
     st.write("Principaux etablissements de l'enseignement superieur français")
     # affiche la carte
